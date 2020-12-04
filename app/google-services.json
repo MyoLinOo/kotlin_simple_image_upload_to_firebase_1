@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "177266701444",
+    "firebase_url": "https://kotlinrealtimedatabase7.firebaseio.com",
+    "project_id": "kotlinrealtimedatabase7",
+    "storage_bucket": "kotlinrealtimedatabase7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177266701444:android:cc51d81642814ee3a3fed1",
+        "android_client_info": {
+          "package_name": "com.gardenermyo.kotlin_image_upload_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177266701444-05jp81kl7dfeg4e190cl23i0pe3jja28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gardenermyo.kotlin_image_upload_2",
+            "certificate_hash": "bef5814bda0b69ff99642660bd82b23631f1823a"
+          }
+        },
+        {
+          "client_id": "177266701444-iv4di2g20defqougjjj1edg68bqon6s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDETfzTNMDfGQyo1gVKzfKyXzoxIfI5zuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177266701444-iv4di2g20defqougjjj1edg68bqon6s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177266701444:android:75d10259a824a047a3fed1",
+        "android_client_info": {
+          "package_name": "com.gardenermyo.kotlin_image_upload_3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177266701444-2sfnkgnhunee6fbti28df09saqt38vlv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gardenermyo.kotlin_image_upload_3",
+            "certificate_hash": "bef5814bda0b69ff99642660bd82b23631f1823a"
+          }
+        },
+        {
+          "client_id": "177266701444-iv4di2g20defqougjjj1edg68bqon6s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDETfzTNMDfGQyo1gVKzfKyXzoxIfI5zuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177266701444-iv4di2g20defqougjjj1edg68bqon6s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177266701444:android:db7a38410292fafda3fed1",
+        "android_client_info": {
+          "package_name": "com.myogardener.kotlin_realtime_database_7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177266701444-bigjl4jks6lgj2rpgqfq8v8jr8uj1nhi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myogardener.kotlin_realtime_database_7",
+            "certificate_hash": "bef5814bda0b69ff99642660bd82b23631f1823a"
+          }
+        },
+        {
+          "client_id": "177266701444-iv4di2g20defqougjjj1edg68bqon6s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDETfzTNMDfGQyo1gVKzfKyXzoxIfI5zuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177266701444-iv4di2g20defqougjjj1edg68bqon6s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177266701444:android:d2898da6f7843ae7a3fed1",
+        "android_client_info": {
+          "package_name": "com.myogardener.kotlin_realtime_database_8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177266701444-m4vanqm80s28stk2n5surdiogvnvdf38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myogardener.kotlin_realtime_database_8",
+            "certificate_hash": "bef5814bda0b69ff99642660bd82b23631f1823a"
+          }
+        },
+        {
+          "client_id": "177266701444-iv4di2g20defqougjjj1edg68bqon6s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDETfzTNMDfGQyo1gVKzfKyXzoxIfI5zuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177266701444-iv4di2g20defqougjjj1edg68bqon6s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
