@@ -33,7 +33,7 @@
         tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/editFragment"
-        android:name="com.gardenermyo.kotlin_image_upload_3.EditFragment"
+        android:name="com.gardenermyo.kotlin_image_upload_3.fragment.EditFragment"
         android:label="fragment_edit"
         tools:layout="@layout/fragment_edit" >
         <argument

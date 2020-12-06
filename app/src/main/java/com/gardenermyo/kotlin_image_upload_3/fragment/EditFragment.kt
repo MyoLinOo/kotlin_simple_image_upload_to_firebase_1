@@ -1,4 +1,4 @@
-package com.gardenermyo.kotlin_image_upload_3
+package com.gardenermyo.kotlin_image_upload_3.fragment
 
 import android.app.Activity
 import android.app.ProgressDialog
@@ -16,14 +16,14 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.gardenermyo.kotlin_image_upload_3.fragment.HomeFragment
+import com.gardenermyo.kotlin_image_upload_3.EditFragmentArgs
+import com.gardenermyo.kotlin_image_upload_3.R
 import com.gardenermyo.kotlin_image_upload_3.model.UserInfos
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_edit.*
 import java.text.SimpleDateFormat
 import java.util.*
