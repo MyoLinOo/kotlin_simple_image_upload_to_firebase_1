@@ -1,14 +1,54 @@
 package com.gardenermyo.kotlin_image_upload_3
 
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
+import com.gardenermyo.kotlin_image_upload_3.model.UserInfos
+
+
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_image.view.*
 
-class ImageAdapter( val urls: List<String>): RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
-    inner class ImageViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+class ImageAdapter(var userinfolist : ArrayList<UserInfos> = ArrayList()): RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
+
+
+
+    private var clickListener: ClickListener?=null
+
+fun setOnClickListener(clickListener: ClickListener){
+    this.clickListener = clickListener
+}
+
+    fun updateData(datalist :ArrayList<UserInfos>){
+       this.userinfolist== datalist
+        notifyDataSetChanged()
+   }
+
+    inner class ImageViewHolder(itemView: View): RecyclerView.ViewHolder(itemView),View.OnClickListener{
+
+       init {
+           itemView.setOnClickListener(this)
+       }
+        lateinit var userinfo: UserInfos
+
+        fun bind(userinfo: UserInfos){
+            this.userinfo= userinfo
+            itemView.item_name.text = userinfo.name
+            itemView.item_price.text = userinfo.price.toString()
+            itemView.item_qrd.text = userinfo.qity.toString()
+
+            Picasso.get()
+                .load(userinfo.imageUrl)
+                .placeholder(R.drawable.image_24)
+                .into(itemView.item_image_view)
+
+        }
+
+        override fun onClick(v: View?) {
+            clickListener?.onClick(userinfo)
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
@@ -19,17 +59,15 @@ class ImageAdapter( val urls: List<String>): RecyclerView.Adapter<ImageAdapter.I
     }
 
     override fun getItemCount(): Int {
-        return urls.size
+        return userinfolist.size
     }
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
-        var url = urls[position]
-        Glide.with(holder.itemView).load(url).into(holder.itemView.item_image_view)
+       holder.bind(userinfolist[position])
 
-//        Picasso.get()
-//            .load(url)
-//            .placeholder(R.drawable.ic_launcher_background)
-//            .into(holder.itemView.item_image_view)
+    }
+    interface ClickListener{
+        fun onClick(userinfos: UserInfos)
     }
 
 }

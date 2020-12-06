@@ -6,17 +6,53 @@
     app:startDestination="@id/loginFragment">
 
     <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gardenermyo.kotlin_image_upload_3.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
         android:id="@+id/loginFragment"
         android:name="com.gardenermyo.kotlin_image_upload_3.fragment.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        android:label="fragment_login2"
+        tools:layout="@layout/fragment_login2" >
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.gardenermyo.kotlin_image_upload_3.fragment.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/addFragment"
+        android:name="com.gardenermyo.kotlin_image_upload_3.fragment.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.gardenermyo.kotlin_image_upload_3.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="integer" />
+        <argument
+            android:name="qity"
+            app:argType="integer" />
+        <argument
+            android:name="key"
+            app:argType="integer" />
+        <argument
+            android:name="index"
+            app:argType="integer" />
+    </fragment>
 </navigation>
